@@ -30,10 +30,11 @@ public class Word {
                rs.next();
                return rs.getString(1);
            }
+           this.con.close();
         } catch (SQLException e ){
             System.out.println(e.getMessage());
         }
-       return word;
+        return word;
     }
 
     private boolean checkLanguage(String word){
