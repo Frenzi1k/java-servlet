@@ -11,7 +11,7 @@ public class Word {
         try{
             Class.forName("com.mysql.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/dictionary?autoReconnect=true&useSSL=false",
-                    "root", "468273911634");
+                    "root", "pass");
             state = con.createStatement();
         }catch (Exception e){
             System.out.println("Error");
